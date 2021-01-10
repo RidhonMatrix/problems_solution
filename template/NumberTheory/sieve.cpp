@@ -15,3 +15,4 @@ void sieve(int n){
 	}
 }
 
+
