@@ -14,7 +14,7 @@ void solve(){
 }
 int main()
 {
-    FasterIO;
+    FasterIO
     int tc = 1;
     //cin >> tc;
     for (int t = 1; t <= tc; t++) {
