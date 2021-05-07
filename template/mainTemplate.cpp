@@ -1,13 +1,21 @@
+/***
+**    Author: Rejaul Karim Ridhon
+***/
 #include<bits/stdc++.h>
 using namespace std;
 
+#define ll           long long
+
+#define pb           push_back
+#define pob          pop_back
+
 #define F            first
-#define S            second  
+#define S            second
 #define Fin          freopen("input.txt","r",stdin);
 #define Fout         freopen("output.txt","w",stdout);
 #define FasterIO     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 
-#define for0(i, n) for (int i = 0; i < (int)(n); ++i)
+#define for0(n) for (int i = 0; i < (int)(n); ++i)
 
 template <typename T> void Print(T ar[] , int n) {for (int i = 0; i + 1 < n; i++)cout << ar[i] << " ";cout << ar[n - 1] << "\n";}
 template <typename T> void Print(const vector<T> &v) {for (int i = 0; i + 1 < v.size() ; i++) cout << v[i] << " ";cout << v.back() << "\n";}
@@ -28,4 +36,5 @@ int main()
         //cout << "Case #" << t  << ": ";
         solve();
     }
+    return 0;
 }
