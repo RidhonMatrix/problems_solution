@@ -9,6 +9,7 @@ using namespace std;
 
 #define for0(i, n) for (int i = 0; i < (int)(n); ++i)
 
+template <typename T> void Print(T ar[] , int n) {for (int i = 0; i + 1 < n; i++)cout << ar[i] << " ";cout << ar[n - 1] << "\n";}
 template <typename T> void Print(const vector<T> &v) {for (int i = 0; i + 1 < v.size() ; i++) cout << v[i] << " ";cout << v.back() << "\n";}
 
 void solve(){
