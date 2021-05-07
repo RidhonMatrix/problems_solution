@@ -17,9 +17,9 @@ void solve(){
 int main()
 {
     #ifndef ONLINE_JUDGE
-	freopen("in.txt", "r", stdin);
-	freopen("out.txt", "w", stdout);
-	#endif
+    freopen("in.txt", "r", stdin);
+    freopen("out.txt", "w", stdout);
+    #endif
     
     int tc = 1;
     //cin >> tc;
