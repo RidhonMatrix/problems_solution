@@ -11,6 +11,8 @@ using namespace std;
 
 #define F            first
 #define S            second
+#define deb(x)       cout << #x << "=" << x << endl
+#define deb2(x, y)   cout << #x << "=" << x << "," << #y << "=" << y << endl
 #define Fin          freopen("input.txt","r",stdin);
 #define Fout         freopen("output.txt","w",stdout);
 #define FasterIO     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
