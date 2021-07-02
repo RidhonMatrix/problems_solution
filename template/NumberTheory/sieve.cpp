@@ -1,3 +1,4 @@
+//O(N log (log N))
 bool marked[1005];
 bool isPrime(int n){
 	if(n<2)  return false;
