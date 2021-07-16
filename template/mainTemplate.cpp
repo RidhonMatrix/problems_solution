@@ -9,6 +9,10 @@ using namespace std;
 #define pb           push_back
 #define pob          pop_back
 
+/**Define memory set function**/
+#define mem(x,y) memset(x,y,sizeof(x))
+#define CLEAR(x) memset(x,0,sizeof(x))
+
 #define F            first
 #define S            second
 #define deb(x)       cout << #x << "=" << x << endl
