@@ -23,6 +23,8 @@ using namespace std;
 
 #define for0(n) for (int i = 0; i < (int)(n); ++i)
 
+template<class T> T MIN3(T a,T b,T c) {return min(a,min(b,c));} /// minimum of 3 number
+template<class T> T MAX3(T a,T b,T c) {return max(a,max(b,c));} ///maximum of 3 number
 template <typename T> void Print(T ar[] , int n) {for (int i = 0; i + 1 < n; i++)cout << ar[i] << " ";cout << ar[n - 1] << "\n";}
 template <typename T> void Print(const vector<T> &v) {for (int i = 0; i + 1 < v.size() ; i++) cout << v[i] << " ";cout << v.back() << "\n";}
 
