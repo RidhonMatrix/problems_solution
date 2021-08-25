@@ -14,3 +14,15 @@ void primeFact(int n){
     if(n>1)
         cout<<n<<"^"<<1<<'\n';
 }
+
+//using sieve O(log(n)
+for(int i=0;i<p.size() && p[i]*p[i]<=n;i++){
+    if(n%p[i]==0){
+        while(n%prime[i]==0){
+            n/=prime[i];
+        }
+        factor.push_back(p[i]);
+    }
+}
+if(n>1) factor.push_back(n);
+
