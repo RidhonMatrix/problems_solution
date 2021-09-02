@@ -37,9 +37,9 @@ bool search(string str){
 void del(node* cur){
     for(int i=0;i<26;i++){
         if(cur->next[i])
-            del(cur->next[i]);
-        delete(cur);
+            del(cur->next[i]);   
     }
+    delete(cur);
 }
 
 int main()
