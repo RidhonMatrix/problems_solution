@@ -1,12 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+#define max 27
 struct node{
     bool endmark;
-    node* next[26+1];
+    node* next[max];
     node(){
         endmark=false;
-        for(int i=0;i<26;i++)
+        for(int i=0;i<max;i++)
             next[i]=NULL;
     }
 }*root;
@@ -35,7 +35,7 @@ bool search(string str){
     return cur->endmark;
 }
 void del(node* cur){
-    for(int i=0;i<26;i++){
+    for(int i=0;i<max;i++){
         if(cur->next[i])
             del(cur->next[i]);   
     }
