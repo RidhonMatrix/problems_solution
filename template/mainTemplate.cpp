@@ -16,10 +16,8 @@ using namespace std;
 #define S            second
 #define deb(x)       cout << #x << "=" << x << endl
 #define deb2(x, y)   cout << #x << "=" << x << "," << #y << "=" << y << endl
-#define Fin          freopen("input.txt","r",stdin);
-#define Fout         freopen("output.txt","w",stdout);
-#define FasterIO     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define ln           '\n'
+#define IOS          ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+#define endl         '\n'
 #define for0(n) for (int i = 0; i < (int)(n); ++i)
 
 template<class T> T MIN3(T a,T b,T c) {return min(a,min(b,c));} /// minimum of 3 number
