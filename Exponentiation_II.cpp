@@ -5,21 +5,37 @@ using namespace std;
 #define endl '\n'
 #define deb(x) cout << #x << "=" << x << endl
 #define deb2(x, y) cout << #x << "=" << x << "," << #y << "=" << y << endl
-ll gcd(ll a, ll b)
+int gcd(int a, int b)
 {
     return b == 0 ? a : gcd(b, a % b);
 }
 
+int mod = 1e9 + 7;
+
+ll modularExpo(ll a, ll n, ll m)
+{
+    ll res = 1;
+    while (n)
+    {
+        if (n % 2)
+        {
+            res = (res * a) % m;
+            n--;
+        }
+        else
+        {
+            a = (a * a) % m;
+            n /= 2;
+        }
+    }
+    return res;
+}
+
 void solve()
 {
-    ll a, b;
-    cin >> a >> b;
-    if (gcd(a, b) == 1)
-    {
-        cout << "No" << endl;
-    }
-    else
-        cout << "Yes" << endl;
+    ll a, b, c;
+    cin >> a >> b >> c;
+    cout << (long long)modularExpo(a, modularExpo(b, c, mod), mod) << endl;
 }
 int main()
 {
