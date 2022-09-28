@@ -30,12 +30,19 @@ ll modularExpo(ll a, ll n, ll m)
     }
     return res;
 }
+/*
+    mod = 1e9 + 7 is prime so using this
+    a ^ b % m = a ^ (b % (m-1)) % m formula
+
+    because phi(m) = (m-1) if m is prime
+
+*/
 
 void solve()
 {
     ll a, b, c;
     cin >> a >> b >> c;
-    cout << (long long)modularExpo(a, modularExpo(b, c, mod), mod) << endl;
+    cout << modularExpo(a, modularExpo(b, c, mod - 1), mod) << endl;
 }
 int main()
 {
